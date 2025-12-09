@@ -7,3 +7,5 @@ Pour démarrer le site web localement, suivez ces étapes :
 
 ```bash
 python3 -m http.server 8000
+```
+Ouvrir le lien : "http://0.0.0.0:8000/"
