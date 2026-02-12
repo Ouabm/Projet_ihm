@@ -86,6 +86,55 @@
     video {
       width:100%;
     }
+    /* ===== PERSONA SECTION ===== */
+    .persona-section {
+      margin: 6rem 0;
+    }
+
+    .persona-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-top: 2rem;
+    }
+
+    .persona-card {
+      background: #111;
+      border-radius: var(--radius);
+      padding: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,.08);
+      transition: .25s;
+    }
+
+    .persona-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .persona-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 1rem;
+    }
+
+    .persona-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .persona-role {
+      font-size: .9rem;
+      color: #aaa;
+    }
+
+    .persona-list {
+      margin-top: .5rem;
+      padding-left: 18px;
+      color: #ddd;
+    }
+
 
     /* SECTION TITLES */
     .section-title {
@@ -313,6 +362,70 @@
     </div>
   </div>
 </section>
+<!-- PERSONAS -->
+<section class="persona-section container">
+  <h2 class="section-title">Personas Utilisateurs</h2>
+  <p class="section-subtitle">Profils types issus des interviews</p>
+
+  <div class="persona-grid">
+
+    <div class="persona-card">
+      <div class="persona-header">
+        <img src="files/perso1.jpg" class="persona-avatar">
+        <div>
+          <strong>Lucas — Débutant</strong>
+          <div class="persona-role">21 ans • Étudiant</div>
+        </div>
+      </div>
+
+      <p>Découvre la salle de sport et cherche des repères clairs.</p>
+
+      <ul class="persona-list">
+        <li>Besoin d’accompagnement</li>
+        <li>Motivation fluctuante</li>
+        <li>Simplicité recherchée</li>
+      </ul>
+    </div>
+
+    <div class="persona-card">
+      <div class="persona-header">
+        <img src="files/perso3.webp" class="persona-avatar">
+        <div>
+          <strong>Jade — Sportive régulière</strong>
+          <div class="persona-role">28 ans • Active</div>
+        </div>
+      </div>
+
+      <p>Optimise ses séances et suit ses performances.</p>
+
+      <ul class="persona-list">
+        <li>Données précises</li>
+        <li>Gain de temps</li>
+        <li>Suivi progression</li>
+      </ul>
+    </div>
+
+    <div class="persona-card">
+      <div class="persona-header">
+        <img src="files/perso2.jpeg" class="persona-avatar">
+        <div>
+          <strong>Marc — Reprise sportive</strong>
+          <div class="persona-role">45 ans • Cadre</div>
+        </div>
+      </div>
+
+      <p>Reprend le sport pour sa santé et son bien-être.</p>
+
+      <ul class="persona-list">
+        <li>Interface rassurante</li>
+        <li>Progression douce</li>
+        <li>Sécurité</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- INTERVIEWS -->
 <section class="interviews-section">
